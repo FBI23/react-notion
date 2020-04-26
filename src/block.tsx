@@ -1,7 +1,7 @@
 import * as React from "react";
-import { DecorationType, BlockType, ContentValueType } from "./types";
 import Asset from "./components/asset";
 import Code from "./components/code";
+import { BlockType, ContentValueType, DecorationType } from "./types";
 
 export const renderChildText = (properties: DecorationType[]) => {
   return properties.map(([text, decorations], i) => {
@@ -125,7 +125,7 @@ export const Block: React.FC<Block> = props => {
       return (
         <figure
           className="notion-asset-wrapper"
-          style={{ width: value.format.block_width }}
+          style={{ width: value?.format?.block_width }}
         >
           <Asset block={block} />
           {value.properties.caption && (

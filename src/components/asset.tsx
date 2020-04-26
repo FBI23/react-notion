@@ -12,6 +12,11 @@ const Asset: React.FC<{ block: BlockType }> = ({ block }) => {
   }
 
   const format = value.format;
+
+  if (!format) {
+    return null;
+  }
+
   const {
     display_source,
     block_aspect_ratio,

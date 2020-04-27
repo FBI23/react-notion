@@ -1,100 +1,100 @@
-.notion {
+.yat {
   font-size: 16px;
   line-height: 1.5;
   color: rgb(55, 53, 47);
   caret-color: rgb(55, 53, 47);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: inter, Helvetica, "Apple Color Emoji", Arial, sans-serif,
+    "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.notion > * {
+.yat > * {
   padding: 3px 0px;
 }
 
-.notion * {
+.yat * {
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
 
-.notion-red {
+.yat-red {
   color: rgb(224, 62, 62);
 }
-.notion-pink {
+.yat-pink {
   color: rgb(173, 26, 114);
 }
-.notion-blue {
+.yat-blue {
   color: rgb(11, 110, 153);
 }
-.notion-purple {
+.yat-purple {
   color: rgb(105, 64, 165);
 }
-.notion-teal {
+.yat-teal {
   color: rgb(15, 123, 108);
 }
-.notion-yellow {
+.yat-yellow {
   color: rgb(223, 171, 1);
 }
-.notion-orange {
+.yat-orange {
   color: rgb(217, 115, 13);
 }
-.notion-brown {
+.yat-brown {
   color: rgb(100, 71, 58);
 }
-.notion-gray {
+.yat-gray {
   color: rgb(155, 154, 151);
 }
-.notion-red_background {
+.yat-red_background {
   background-color: rgb(251, 228, 228);
 }
-.notion-pink_background {
+.yat-pink_background {
   background-color: rgb(244, 223, 235);
 }
-.notion-blue_background {
+.yat-blue_background {
   background-color: rgb(221, 235, 241);
 }
-.notion-purple_background {
+.yat-purple_background {
   background-color: rgb(234, 228, 242);
 }
-.notion-teal_background {
+.yat-teal_background {
   background-color: rgb(221, 237, 234);
 }
-.notion-yellow_background {
+.yat-yellow_background {
   background-color: rgb(251, 243, 219);
 }
-.notion-orange_background {
+.yat-orange_background {
   background-color: rgb(250, 235, 221);
 }
-.notion-brown_background {
+.yat-brown_background {
   background-color: rgb(233, 229, 227);
 }
-.notion-gray_background {
+.yat-gray_background {
   background-color: rgb(235, 236, 237);
 }
-.notion-red_background_co {
+.yat-red_background_co {
   background-color: rgb(251, 228, 228, 0.3);
 }
-.notion-pink_background_co {
+.yat-pink_background_co {
   background-color: rgb(244, 223, 235, 0.3);
 }
-.notion-blue_background_co {
+.yat-blue_background_co {
   background-color: rgb(221, 235, 241, 0.3);
 }
-.notion-purple_background_co {
+.yat-purple_background_co {
   background-color: rgb(234, 228, 242, 0.3);
 }
-.notion-teal_background_co {
+.yat-teal_background_co {
   background-color: rgb(221, 237, 234, 0.3);
 }
-.notion-yellow_background_co {
+.yat-yellow_background_co {
   background-color: rgb(251, 243, 219, 0.3);
 }
-.notion-orange_background_co {
+.yat-orange_background_co {
   background-color: rgb(250, 235, 221, 0.3);
 }
-.notion-brown_background_co {
+.yat-brown_background_co {
   background-color: rgb(233, 229, 227, 0.3);
 }
-.notion-gray_background_co {
+.yat-gray_background_co {
   background-color: rgb(235, 236, 237, 0.3);
 }
 h1,
@@ -103,7 +103,7 @@ h3 {
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
-.notion-h1 {
+.yat-h1 {
   font-weight: 600;
   font-size: 1.875em;
   line-height: 1.3;
@@ -111,10 +111,10 @@ h3 {
   margin-top: 1.4em;
   margin-bottom: 1px;
 }
-.notion-h1:first-child {
+.yat-h1:first-child {
   margin-top: 0px;
 }
-.notion-h2 {
+.yat-h2 {
   font-weight: 600;
   font-size: 1.5em;
   line-height: 1.3;
@@ -123,7 +123,7 @@ h3 {
   margin-top: 1.1em;
   margin-bottom: 1px;
 }
-.notion-h3 {
+.yat-h3 {
   font-weight: 600;
   font-size: 1.25em;
   line-height: 1.3;
@@ -132,7 +132,7 @@ h3 {
   margin-top: 1em;
   margin-bottom: 1px;
 }
-.notion-quote {
+.yat-quote {
   white-space: pre-wrap;
   word-break: break-word;
   border-left: 3px solid currentcolor;
@@ -140,19 +140,19 @@ h3 {
   margin: 0;
   font-size: 1.2em;
 }
-.notion-hr {
+.yat-hr {
   margin: 6px 0px;
   padding: 0;
   border-top: none;
   border-color: rgba(55, 53, 47, 0.09);
 }
-.notion-link {
+.yat-link {
   color: inherit;
   text-decoration: underline;
   text-decoration-color: inherit;
 }
 
-.notion-inline-code {
+.yat-inline-code {
   color: #eb5757;
   padding: 0.2em 0.4em;
   background: rgba(135, 131, 120, 0.15);
@@ -162,56 +162,56 @@ h3 {
     monospace;
 }
 
-.notion-list {
+.yat-list {
   margin: 0;
   margin-block-start: 0.6em;
   margin-block-end: 0.6em;
 }
 
-.notion-list-disc {
+.yat-list-disc {
   list-style-type: disc;
   padding-inline-start: 1.7em;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.notion-list-numbered {
+.yat-list-numbered {
   list-style-type: decimal;
   padding-inline-start: 1.6em;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.notion-list-disc li {
+.yat-list-disc li {
   padding-left: 0.1em;
 }
 
-.notion-list-numbered li {
+.yat-list-numbered li {
   padding-left: 0.2em;
 }
 
-.notion-list li {
+.yat-list li {
   padding: 6px 0px;
 }
 
-.notion-asset-wrapper {
+.yat-asset-wrapper {
   margin: 2px auto 0.5rem;
   max-width: 100%;
 }
 
-.notion-asset-wrapper iframe {
+.yat-asset-wrapper iframe {
   border: none;
 }
 
-.notion-text {
+.yat-text {
   white-space: pre-wrap;
   word-break: break-word;
   caret-color: rgb(55, 53, 47);
 }
-.notion-block {
+.yat-block {
   padding: 3px 2px;
 }
 
-.notion-code {
+.yat-code {
   padding: 30px 16px 30px 20px;
   margin: 4px 0;
   tab-size: 2;
@@ -224,43 +224,43 @@ h3 {
   overflow-x: scroll;
 }
 
-.notion-column {
+.yat-column {
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-.notion-column > *:first-child {
+.yat-column > *:first-child {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
 }
 
-.notion-column > *:last-child {
+.yat-column > *:last-child {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
 }
 
-.notion-row {
+.yat-row {
   display: flex;
 }
 
 @media (max-width: 640px) {
-  .notion-row {
+  .yat-row {
     flex-direction: column;
   }
 
-  .notion-row > *,
-  .notion-column > * {
+  .yat-row > *,
+  .yat-column > * {
     width: 100% !important;
   }
 }
 
-.notion-spacer:last-child {
+.yat-spacer:last-child {
   display: none;
 }
 
-.notion-image-inset {
+.yat-image-inset {
   position: absolute;
   left: 0;
   top: 0;
@@ -270,7 +270,7 @@ h3 {
   height: 100%;
 }
 
-.notion-image-caption {
+.yat-image-caption {
   padding: 6px 0px;
   white-space: pre-wrap;
   word-break: break-word;
@@ -280,7 +280,7 @@ h3 {
   color: rgba(55, 53, 47, 0.6);
 }
 
-.notion-callout {
+.yat-callout {
   padding: 16px 16px 16px 12px;
   display: flex;
   width: 100%;
@@ -291,6 +291,6 @@ h3 {
   align-items: center;
   box-sizing: border-box;
 }
-.notion-callout-text {
+.yat-callout-text {
   margin-left: 8px;
 }

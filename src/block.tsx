@@ -13,13 +13,13 @@ export const renderChildText = (properties: DecorationType[]) => {
       switch (decorator[0]) {
         case "h":
           return (
-            <span key={i} className={`notion-${decorator[1]}`}>
+            <span key={i} className={`yat-${decorator[1]}`}>
               {element}
             </span>
           );
         case "c":
           return (
-            <code key={i} className="notion-inline-code">
+            <code key={i} className="yat-inline-code">
               {element}
             </code>
           );
@@ -31,7 +31,7 @@ export const renderChildText = (properties: DecorationType[]) => {
           return <s key={i}>{element}</s>;
         case "a":
           return (
-            <a className="notion-link" href={decorator[1]} key={i}>
+            <a className="yat-link" href={decorator[1]} key={i}>
               {element}
             </a>
           );
@@ -54,36 +54,36 @@ export const Block: React.FC<Block> = props => {
   const blockValue = block?.value;
   switch (blockValue.type) {
     case "page":
-      return <div className="notion">{children}</div>;
+      return <div className="yat">{children}</div>;
     case "header":
       if (!blockValue.properties) return null;
       return (
-        <h1 className="notion-h1">
+        <h1 className="yat-h1">
           {renderChildText(blockValue.properties.title)}
         </h1>
       );
     case "sub_header":
       if (!blockValue.properties) return null;
       return (
-        <h2 className="notion-h2">
+        <h2 className="yat-h2">
           {renderChildText(blockValue.properties.title)}
         </h2>
       );
     case "sub_sub_header":
       if (!blockValue.properties) return null;
       return (
-        <h3 className="notion-h3">
+        <h3 className="yat-h3">
           {renderChildText(blockValue.properties.title)}
         </h3>
       );
     case "divider":
-      return <hr className="notion-hr" />;
+      return <hr className="yat-hr" />;
     case "text":
       if (!blockValue.properties) {
         return <p style={{ height: "1rem" }}> </p>;
       }
       return (
-        <p className={`notion-text`}>
+        <p className={`yat-text`}>
           {renderChildText(blockValue.properties.title)}
         </p>
       );
@@ -93,9 +93,9 @@ export const Block: React.FC<Block> = props => {
 
       const wrapList = (content: React.ReactNode) =>
         blockValue.type === "bulleted_list" ? (
-          <ul className="notion-list notion-list-disc">{content}</ul>
+          <ul className="yat-list yat-list-disc">{content}</ul>
         ) : (
-          <ol className="notion-list notion-list-numbered">{content}</ol>
+          <ol className="yat-list yat-list-numbered">{content}</ol>
         );
 
       let output: JSX.Element | null = null;
@@ -124,12 +124,12 @@ export const Block: React.FC<Block> = props => {
 
       return (
         <figure
-          className="notion-asset-wrapper"
+          className="yat-asset-wrapper"
           style={{ width: value?.format?.block_width }}
         >
           <Asset block={block} />
           {value.properties.caption && (
-            <figcaption className="notion-image-caption">
+            <figcaption className="yat-image-caption">
               {renderChildText(value.properties.caption)}
             </figcaption>
           )}
@@ -139,14 +139,12 @@ export const Block: React.FC<Block> = props => {
       if (blockValue.properties.title) {
         const content = blockValue.properties.title[0][0];
         const language = blockValue.properties.language[0][0];
-        return (
-          <Code key={blockValue.id} language={language || ""} code={content} />
-        );
+        return <Code key={blockValue.id} language={language} code={content} />;
       }
       break;
     }
     case "column_list":
-      return <div className="notion-row">{children}</div>;
+      return <div className="yat-row">{children}</div>;
     case "column":
       const spacerWith = 46;
       const ratio = blockValue.format.column_ratio;
@@ -155,26 +153,24 @@ export const Block: React.FC<Block> = props => {
       const width = `calc((100% - ${spacerTotalWith}px) * ${ratio})`;
       return (
         <>
-          <div className="notion-column" style={{ width }}>
+          <div className="yat-column" style={{ width }}>
             {children}
           </div>
-          <div className="notion-spacer" style={{ width: spacerWith }} />
+          <div className="yat-spacer" style={{ width: spacerWith }} />
         </>
       );
     case "quote":
       if (!blockValue.properties) return null;
       return (
-        <blockquote className="notion-quote">
+        <blockquote className="yat-quote">
           {renderChildText(blockValue.properties.title)}
         </blockquote>
       );
     case "callout":
       return (
-        <div
-          className={`notion-callout notion-${blockValue.format.block_color}_co`}
-        >
+        <div className={`yat-callout yat-${blockValue.format.block_color}_co`}>
           <div>{blockValue.format.page_icon}</div>
-          <div className="notion-callout-text">
+          <div className="yat-callout-text">
             {renderChildText(blockValue.properties.title)}
           </div>
         </div>

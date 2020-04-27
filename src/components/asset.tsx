@@ -34,7 +34,7 @@ const Asset: React.FC<{ block: BlockType }> = ({ block }) => {
           position: "relative"
         }}
       >
-        <iframe className="notion-image-inset" src={display_source} />
+        <iframe className="yat-image-inset" src={display_source} />
       </div>
     );
   }
@@ -53,7 +53,7 @@ const Asset: React.FC<{ block: BlockType }> = ({ block }) => {
             position: "relative"
           }}
         >
-          <img className="notion-image-inset" alt={caption} src={src} />
+          <img className="yat-image-inset" alt={caption} src={src} />
         </div>
       );
     } else {

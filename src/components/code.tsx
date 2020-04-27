@@ -1,6 +1,6 @@
-import * as React from "react";
 import { highlight, languages } from "prismjs";
 import "prismjs/components/prism-jsx";
+import * as React from "react";
 
 const Code: React.FC<{ code: string; language: string }> = ({
   code,
@@ -12,9 +12,9 @@ const Code: React.FC<{ code: string; language: string }> = ({
   return (
     <pre>
       <code
-        className="notion-code"
+        className="yat-code"
         dangerouslySetInnerHTML={{
-          __html: highlight(code, prismLanguage, language)
+          __html: highlight(code, prismLanguage, language.toLowerCase())
         }}
       />
     </pre>
